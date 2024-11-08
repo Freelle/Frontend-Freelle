@@ -35,7 +35,10 @@ const providers = computed(() => userStore.UsersLimeted);
             <button class="btn">
               <i class="mdi mdi-heart-outline"></i>
             </button>
-            <button class="btn">Ver Perfil</button>
+            <router-link to="/prestadores">
+            <button class="btn">Ver Perfil</button> 
+          </router-link>
+          
           </div>
           <div class="provider-social">
             <a :href="provider.linkedin" target="_blank" class="no-decoration">
@@ -137,6 +140,7 @@ h2 {
 
 .btn {
   background-color: white;
+  cursor: pointer;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 5px 10px;
